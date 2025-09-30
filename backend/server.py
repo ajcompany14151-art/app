@@ -77,7 +77,11 @@ def prepare_for_mongo(data: Dict) -> Dict:
     return data
 
 def parse_from_mongo(item: Dict) -> Dict:
-    """Parse datetime strings back to datetime objects"""
+    """Parse datetime strings back to datetime objects and remove MongoDB _id"""
+    # Remove MongoDB ObjectId which causes serialization issues
+    if '_id' in item:
+        del item['_id']
+    
     for key, value in item.items():
         if key in ['timestamp', 'created_at', 'last_message_at'] and isinstance(value, str):
             try:
