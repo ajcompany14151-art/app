@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://agentic-aj-studioz.preview.emergentagent.com/api/:1"
+    }
+  ]
+}
