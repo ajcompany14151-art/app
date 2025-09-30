@@ -1,0 +1,72 @@
+{
+  "summary": {
+    "total_tests": 8,
+    "passed_tests": 6,
+    "success_rate": "75.0%",
+    "timestamp": "2025-09-30T15:10:53.647409"
+  },
+  "test_results": [
+    {
+      "test_name": "Health Check",
+      "success": true,
+      "details": "Status: healthy, Platform: AJ STUDIOZ, Version: 1.0.0",
+      "response_data": null,
+      "timestamp": "2025-09-30T15:10:40.466101"
+    },
+    {
+      "test_name": "Root Endpoint",
+      "success": true,
+      "details": "Message: Welcome to AJ STUDIOZ - Advanced Agentic AI Platform",
+      "response_data": null,
+      "timestamp": "2025-09-30T15:10:40.504936"
+    },
+    {
+      "test_name": "Get Models",
+      "success": true,
+      "details": "Available providers: openai, anthropic, gemini",
+      "response_data": null,
+      "timestamp": "2025-09-30T15:10:40.545337"
+    },
+    {
+      "test_name": "Chat Functionality",
+      "success": true,
+      "details": "Session ID: ceb8dfb3-fe7d-4db6-b6d9-5795b0413bb9, Response length: 180 chars",
+      "response_data": null,
+      "timestamp": "2025-09-30T15:10:42.684139"
+    },
+    {
+      "test_name": "Get Sessions",
+      "success": false,
+      "details": "HTTP 500",
+      "response_data": {
+        "status_code": 500,
+        "text": "Internal Server Error"
+      },
+      "timestamp": "2025-09-30T15:10:42.726353"
+    },
+    {
+      "test_name": "Get Session Messages",
+      "success": false,
+      "details": "HTTP 500",
+      "response_data": {
+        "status_code": 500,
+        "text": "Internal Server Error"
+      },
+      "timestamp": "2025-09-30T15:10:42.762208"
+    },
+    {
+      "test_name": "Analytics",
+      "success": true,
+      "details": "Sessions: 5, Messages: 11, Platform: AJ STUDIOZ",
+      "response_data": null,
+      "timestamp": "2025-09-30T15:10:42.798035"
+    },
+    {
+      "test_name": "File Upload & Analysis",
+      "success": true,
+      "details": "File: test_document.txt, Analysis length: 2121 chars",
+      "response_data": null,
+      "timestamp": "2025-09-30T15:10:53.646507"
+    }
+  ]
+}
